@@ -104,7 +104,7 @@ def main():
     to_save = np.array(shares2)
     for i in range(len(to_save)):
         Image.fromarray(to_save[i].reshape(shape).astype(np.uint8)) \
-            .save("./result/mLTn/share_{}.bmp".format(i + 1))
+            .save("./result/mLTn(31-34)/share_{}.bmp".format(i + 1))
 
     # 如果m>n或m<n进行了调整，要对GAS进行更新
     w = get_w(E1, M, GAS)
@@ -120,7 +120,7 @@ def main():
     to_save2 = np.array(s_recover_ultimate)
     for i in range(len(to_save2)):
         Image.fromarray(to_save2[i].reshape(shape).astype(np.uint8)) \
-            .save("./result/mLTn/reconstruct_{}.bmp".format(i + 1))
+            .save("./result/mLTn(31-34)/reconstruct_{}.bmp".format(i + 1))
 
 
 if __name__ == '__main__':
